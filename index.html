@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 3px solid blue;
+            width: 70%;
+            height: 40rem;
+            margin: auto;       
+            align-items: stretch; 
+            gap: 1em;    
+            /* justify-content: space-between;
+            align-content: center; */
+        }
+        .flex__item{
+            padding: 1em;
+            border: 1px solid #000;
+            width: fit-content;
+        }
+        .flex__item--bottom{
+            align-self: flex-end;
+            flex-grow: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="flex__item">item</div>
+        <div class="flex__item">item</div>
+        <div class="flex__item">item</div>
+        <div class="flex__item flex__item--bottom">item</div>
+        <div class="flex__item">item</div>
+        <div class="flex__item">item1</div>        
+    </div>
+</body>
+</html>
